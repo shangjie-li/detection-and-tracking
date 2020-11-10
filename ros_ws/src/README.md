@@ -43,7 +43,7 @@
    rosparam load param.yaml
    python3 detection_and_tracking.py
    ```
- - 检测及跟踪的目标发布至话题`/targets`，类型为`BoundingBoxArray`，可以通过rviz查看
+ - 检测及跟踪的目标发布至话题`/targets`，类型为`BoundingBoxArray`，可以通过`rviz`查看
  
  
 
