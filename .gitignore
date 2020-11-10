@@ -1,0 +1,12 @@
+ros_ws/build
+ros_ws/devel
+ros_ws/.catkin_workspace
+ros_ws/src/CMakeLists.txt
+ros_ws/src/detection_and_tracking/scripts/weights
+ros_ws/src/detection_and_tracking/scripts/result
+ros_ws/src/detection_and_tracking/scripts/__pycache__
+ros_ws/src/detection_and_tracking/scripts/data/__pycache__
+ros_ws/src/detection_and_tracking/scripts/layers/__pycache__
+ros_ws/src/detection_and_tracking/scripts/layers/functions/__pycache__
+ros_ws/src/detection_and_tracking/scripts/layers/modules/__pycache__
+ros_ws/src/detection_and_tracking/scripts/utils/__pycache__
