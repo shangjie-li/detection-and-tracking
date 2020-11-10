@@ -16,6 +16,8 @@
    # Python3与ROS兼容
    pip3 install catkin_tools
    pip3 install rospkg
+   # jsk_recognition_msgs消息类型
+   sudo apt-get install ros-kinetic-jsk-recognition-msgs
    # 网络接口数据包捕获函数库
    sudo apt-get install libpcap-dev
    ```
@@ -24,6 +26,7 @@
    cd detection-and-tracking/ros_ws
    catkin_make
    ```
+ - 下载模型文件[yolact_resnet50_54_800000.pth](https://drive.google.com/file/d/1yp7ZbbDwvMiFJEq4ptVKTYTI2VeRDXl0/view?usp=sharing)，并保存至目录`detection_and_tracking/scripts/weights`
 
 ## 使用说明
  - 启动相机节点
@@ -32,14 +35,12 @@
    ```
  - 启动激光雷达节点
    ```Shell
-   roslaunch velodyne_pointcloud VLP16_points.launch
+   roslaunch hesai_lidar p40.launch
    ```
- - 加载参数文件至ROS参数服务器
+ - 启动`detection_and_tracking`
    ```Shell
    cd detection_and_tracking/scripts
    rosparam load param.yaml
- - 启动`detection_and_tracking`
-   ```Shell
    python3 detection_and_tracking.py
    ```
  - 检测及跟踪的目标发布至话题`/targets`，类型为`BoundingBoxArray`，可以通过rviz查看
