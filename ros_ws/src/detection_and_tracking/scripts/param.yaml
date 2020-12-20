@@ -13,15 +13,15 @@ dt:
   display_result_mode: True
 
   image_topic: /usb_cam/image_rect_color
-  lidar_topic: /velodyne_points
+  lidar_topic: /pandar_points_no_ground
   pub_topic: /targets
   calibration_file_path: /home/lishangjie/ros_workspace/detection_and_tracking_ws/src/detection_and_tracking/conf/head_camera.yaml
 
-  is_limit_mode: True
+  is_limit_mode: False
   the_view_number: 1
   the_field_of_view: 100
   
-  is_clip_mode: True
+  is_clip_mode: False
   the_sensor_height: 2.0
   the_view_higher_limit: 4.0
   the_view_lower_limit: -2.0
