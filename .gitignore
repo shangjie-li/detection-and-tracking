@@ -10,3 +10,4 @@ ros_ws/src/detection_and_tracking/scripts/layers/__pycache__
 ros_ws/src/detection_and_tracking/scripts/layers/functions/__pycache__
 ros_ws/src/detection_and_tracking/scripts/layers/modules/__pycache__
 ros_ws/src/detection_and_tracking/scripts/utils/__pycache__
+ros_ws/src/detection_and_tracking/scripts/*.mp4
