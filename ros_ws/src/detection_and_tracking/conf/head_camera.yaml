@@ -4,14 +4,14 @@ ProjectionMat: !!opencv-matrix
    rows: 3
    cols: 4
    dt: d
-   data: [581.921142578125, 0, 605.0637343471462, 0, 0, 604.7725830078125, 332.6973828462578, 0, 0, 0, 1, 0]
+   data: [461, 0, 333, 0, 0, 463, 184, 0, 0, 0, 1, 0]
 LidarToCameraMat: !!opencv-matrix
    rows: 4
    cols: 4
    dt: d
    data: [0, -1, 0, 0, 0, 0, -1, 0, 1, 0, 0, 0, 0, 0, 0, 1]
-RotationAngleX: 0
-RotationAngleY: -1.5
+RotationAngleX: -1
+RotationAngleY: -1
 RotationAngleZ: 0
 
 

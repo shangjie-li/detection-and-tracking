@@ -839,6 +839,7 @@ def velodyne_callback(pointcloud):
     
     # 主窗口显示
     if display_main_window:
+        cv2.namedWindow("main", cv2.WINDOW_NORMAL)
         cv2.imshow("main", result_image)
     if record_main_window and main_window_initialized:
         video_main.write(result_image)

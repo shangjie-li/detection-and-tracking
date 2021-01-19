@@ -8,14 +8,14 @@ dt:
   print_time_stamp_mode: False
   print_xx_mode: False
 
-  display_mask_mode: True
-  display_pointcloud_mode: True
+  display_mask_mode: False
+  display_pointcloud_mode: False
   display_result_mode: True
 
-  image_topic: /usb_cam/image_rect_color
+  image_topic: /usb_cam/image_raw
   lidar_topic: /pandar_points_no_ground
   pub_topic: /targets
-  calibration_file_path: /home/lishangjie/ros_workspace/detection_and_tracking_ws/src/detection_and_tracking/conf/head_camera.yaml
+  calibration_file_path: /home/seucat/shangjie/detection-and-tracking/ros_ws/src/detection_and_tracking/conf/head_camera.yaml
 
   is_limit_mode: False
   the_view_number: 1
@@ -43,4 +43,4 @@ dt:
   sigmaox: 0.01
   sigmaoy: 0.01
 
-  jet_color: 25
+  jet_color: 7.5

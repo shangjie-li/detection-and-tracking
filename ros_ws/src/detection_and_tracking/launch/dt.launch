@@ -26,7 +26,7 @@
         
         <param name="the_meank" value="10"/>
         <param name="the_stdmul" value="1.0"/>
-        <param name="the_leafsize" value="0.2"/>
+        <param name="the_leafsize" value="0.1"/>
         
     </node>
 
