@@ -692,6 +692,7 @@ def velodyne_callback(pointcloud):
             et_m = et
             id_stamp = t
     cv_image = cv_image_list[id_stamp]
+    cv_image = cv_image[:, :, (2, 1, 0)]
     
     # 动态控制主窗口显示
     global display_main_window
