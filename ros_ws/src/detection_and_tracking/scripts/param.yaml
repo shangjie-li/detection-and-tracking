@@ -9,13 +9,13 @@ dt:
   print_xx_mode: False
 
   display_mask_mode: False
-  display_pointcloud_mode: False
+  display_pointcloud_mode: True
   display_result_mode: True
 
-  image_topic: /usb_cam/image_raw
+  image_topic: /usb_cam/image_rect_color
   lidar_topic: /pandar_points_no_ground
   pub_topic: /targets
-  calibration_file_path: /home/seucat/shangjie/detection-and-tracking/ros_ws/src/detection_and_tracking/conf/head_camera.yaml
+  calibration_file_path: /home/lishangjie/detection-and-tracking/ros_ws/src/detection_and_tracking/conf/head_camera.yaml
 
   is_limit_mode: False
   the_view_number: 1

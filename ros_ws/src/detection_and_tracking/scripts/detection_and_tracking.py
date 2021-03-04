@@ -33,6 +33,7 @@ from numpy_pc2 import pointcloud2_to_xyz_array
 from find_rect import find_rect
 from akf_tracker import AugmentKalmanFilter
 from jet_color import Jet_Color
+from fit_obb import *
 
 def str2bool(v):
     if v.lower() in ('yes', 'true', 't', 'y', '1'):
@@ -184,6 +185,17 @@ def fusion(picamera, piimage, num_target, target_masks, target_classes):
                 points_x_set += list(pts_xyz[:, 0])
                 points_y_set += list(pts_xyz[:, 1])
                 points_z_set += list(pts_xyz[:, 2])
+                
+                print('points_x')
+                pts_xyz_x = list(pts_xyz[:, 0])
+                pts_xyz_x = np.around(pts_xyz_x, 2)
+                pts_xyz_x = list(pts_xyz_x)
+                print(pts_xyz_x)
+                print('points_z')
+                pts_xyz_z = list(pts_xyz[:, 2])
+                pts_xyz_z = np.around(pts_xyz_z, 2)
+                pts_xyz_z = list(pts_xyz_z)
+                print(pts_xyz_z)
                 
                 # 根据目标点云中最近点的距离筛选
                 pts_dis = np.sqrt(pts_xyz[:, 0] ** 2 + pts_xyz[:, 2] ** 2)
