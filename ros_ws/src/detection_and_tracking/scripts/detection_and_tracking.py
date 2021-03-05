@@ -33,7 +33,6 @@ from numpy_pc2 import pointcloud2_to_xyz_array
 from find_rect import find_rect
 from akf_tracker import AugmentKalmanFilter
 from jet_color import Jet_Color
-from fit_obb import *
 
 def str2bool(v):
     if v.lower() in ('yes', 'true', 't', 'y', '1'):
