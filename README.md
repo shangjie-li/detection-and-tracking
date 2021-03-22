@@ -1,10 +1,10 @@
 # detection-and-tracking
 
 ## 运行
- - 启动相机、激光雷达和dt算法（目标检测和跟踪）
+ - 启动相机、激光雷达和检测跟踪算法
    ```Shell
-   sh ~/detection-and-tracking/ros_ws/src/detection_and_tracking/launch/sensors.sh
-   sh ~/detection-and-tracking/ros_ws/src/detection_and_tracking/launch/dt.sh
+   sh ros_ws/src/detection_and_tracking/launch/sensors.sh
+   sh ros_ws/src/detection_and_tracking/launch/dt.sh
    ``` 
    
  - 如果出现`source: not found`
@@ -19,11 +19,12 @@
    roslaunch hesai_lidar p40.launch
    ```
    
- - 单独启动dt算法（目标检测和跟踪）
+ - 单独启动检测跟踪算法
    ```Shell
    roslaunch points_process points_process.launch
-   roslaunch points_ground_filter points_ground_filter.launch
-   rosparam load ~/detection-and-tracking/ros_ws/src/detection_and_tracking/scripts/param.yaml
-   python3 ~/detection-and-tracking/ros_ws/src/detection_and_tracking/scripts/detection_and_tracking.py
+   cd ros_ws/src/detection_and_tracking/conf
+   rosparam load param.yaml
+   cd ros_ws/src/detection_and_tracking/scripts
+   python3 detection_and_tracking.py
    ```
 

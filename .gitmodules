@@ -1,0 +1,6 @@
+[submodule "ros_ws/src/detection_and_tracking"]
+	path = ros_ws/src/detection_and_tracking
+	url = https://github.com/shangjie-li/detection_and_tracking.git
+[submodule "ros_ws/src/points_process"]
+	path = ros_ws/src/points_process
+	url = https://github.com/shangjie-li/points_process.git
