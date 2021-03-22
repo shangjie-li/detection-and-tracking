@@ -4,3 +4,9 @@
 [submodule "ros_ws/src/points_process"]
 	path = ros_ws/src/points_process
 	url = https://github.com/shangjie-li/points_process.git
+[submodule "ros_ws/src/usb_cam"]
+	path = ros_ws/src/usb_cam
+	url = https://github.com/shangjie-li/usb_cam.git
+[submodule "ros_ws/src/Pandar40_ROS"]
+	path = ros_ws/src/Pandar40_ROS
+	url = https://github.com/shangjie-li/Pandar40_ROS.git
